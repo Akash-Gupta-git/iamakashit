@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "title": "📋 Attendance Management System",
+    "description": "A Python-based system to manage and track student attendance efficiently with reporting features.",
+    "image": "https://ubsapp.com/wp-content/uploads/2022/03/attendance_management-copy.png",
+    "link": "https://github.com/yourusername/attendance-management-system"
+  },
+  {
+    "id": 2,
+    "title": "☁️ Weather Application",
+    "description": "Real-time weather forecasting app using HTML, CSS, JS, and a Weather API. Features current, hourly, and daily forecasts.",
+    "image": "/assets/images/weather.png",
+    "link": "https://github.com/yourusername/weather-app"
+  },
+  {
+    "id": 3,
+    "title": "💱 Currency Converter",
+    "description": "A responsive currency converter using API integration to convert currencies in real-time.",
+    "image": "/assets/images/currency.png",
+    "link": "https://github.com/yourusername/currency-converter"
+  },
+  {
+    "id": 4,
+    "title": "🛒 Amazon & Netflix Clone",
+    "description": "UI clones of Amazon and Netflix created with HTML, CSS, JS. Simulates product listings and media streaming pages.",
+    "image": "/assets/images/clones.png",
+    "link": "https://github.com/yourusername/amazon-netflix-clone"
+  },
+  {
+    "id": 5,
+    "title": "🍔 Food Order & 🛍️ Shopping Cart System",
+    "description": "Python-powered food ordering and shopping cart system with product management and billing features.",
+    "image": "/assets/images/food-cart.png",
+    "link": "https://github.com/yourusername/food-shopping-cart"
+  }
+]

@@ -1,0 +1,636 @@
+/* Light Mode */
+body, .light-mode {
+  background-color: #f8f9fa;
+  color: #212529;
+  transition: all 0.4s ease;
+}
+
+/* Dark Mode */
+.dark-mode {
+  background-color: #121212;
+  color: #f0f0f0;
+  transition: all 0.4s ease;
+}
+
+/* Navbar light/dark mode consistency */
+.navbar-light .navbar-brand,
+.navbar-light .nav-link {
+  color: #212529 !important;
+}
+
+.navbar-dark .navbar-brand,
+.navbar-dark .nav-link {
+  color: #f0f0f0 !important;
+}
+
+/* Section text colors */
+.light-mode .about-section,
+.light-mode .skills-section,
+.light-mode .skill-name,
+.light-mode .projects-section,
+.light-mode .project-title ,
+.light-mode .experience-section,
+.light-mode .contact-section {
+  color: #212529;
+}
+
+.dark-mode .about-section,
+.dark-mode .skills-section,
+.dark-mode .skill-name,
+.dark-mode .projects-section,
+.dark-mode  .project-title,
+.dark-mode .experience-section,
+.dark-mode .contact-section {
+  color: #f0f0f0;
+}
+
+
+
+/* Navbar */
+.navbar {
+  font-weight: 500;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-link {
+  margin: 0 0.5rem;
+  cursor: pointer;
+}
+
+/* Hero Section */
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  text-align: center;
+}
+
+.hero-section h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.hero-section p {
+  font-size: 1.2rem;
+  max-width: 600px;
+}
+.social-icons a {
+  font-size: 1.8rem;
+  gap: 0px;
+}
+
+
+
+
+/* Stats Section */
+.stats-section {
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.stats-section h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.stats-section .card {
+  border-radius: 12px;
+  padding: 1rem;
+}
+
+/* Contact Form */
+.contact-section {
+  padding: 4rem 0;
+}
+
+.contact-section h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.contact-section .form-label {
+  font-weight: 500;
+}
+
+.contact-section .form-control {
+  border-radius: 10px;
+  padding: 10px;
+}
+
+/* Dark Mode */
+.bg-dark {
+  background-color: #121212 !important;
+}
+
+/* .text-white {
+  color: #ffffff !important;
+}
+
+.bg-light {
+  background-color: #f8f9fa !important;
+}
+
+.text-dark {
+  color: #212529 !important;
+} */
+
+/* Buttons */
+button, .btn {
+  border-radius: 50px;
+  padding: 0.5rem 1.5rem;
+}
+
+/* Footer */
+.footer {
+  padding: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+/* Transitions */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 0.8s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* --------------------Skills-------------------- */
+
+.skills-section h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.progress-bar {
+  border-radius: 50px;
+}
+
+h5 {
+  font-weight: 500;
+}
+
+/* -------------------hero session---------------- */
+.hero-section button {
+  border-radius: 50px;
+  padding: 0.6rem 1.5rem;
+  font-size: 1.1rem;
+}
+.nav-link.active {
+  font-weight: bold;
+  color: #0d6efd !important;
+}
+
+
+/* -----------------card------------- */
+.hero-section {
+  /* background: linear-gradient(135deg, #2e2e2e, #1a1a1a); */
+  height: 100vh;
+}
+
+.highlight {
+  background: linear-gradient(90deg, #ff8b6e, #ff6ec7, #7366ff, #6effe6);
+  background-size: 300% 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientShift 3s ease infinite;
+  font-weight: 800;
+  position: relative;
+}
+
+/* Optional — subtle glow */
+.highlight::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  filter: blur(8px);
+  opacity: 0.5;
+  z-index: -1;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Smooth gradient shifting animation */
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+
+/* ------------------Hero------------------- */
+.hero-bg {
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  color: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.profile-pic {
+  width: 380px;
+  height: 280px;
+  border: 5px solid #fff;
+  object-fit: cover;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+  transition: 0.4s;
+
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.3);
+  }
+}
+
+
+@media (min-width:250px) and (max-width:510px) {
+  .profile-pic {
+    width: 280px;
+  }
+}
+
+
+
+.custom-btn {
+  margin-top: 10px;
+  border: none;
+  border-radius: 50px;
+  padding: 12px 28px;
+}
+
+.button-group button {
+  margin-top: 10px;
+}
+
+
+/* ---------------------About-------------- */
+
+.about-section {
+  /* background: linear-gradient(135deg, #1f1f1f, #292929); */
+  padding: 4rem 0;
+  text-align: center;
+  color: #ffffff;
+  
+  h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+  }
+
+  p {
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  .about-title {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #ff6ec7;
+    
+    .about-subtitle {
+      font-size: 1.1rem;
+      color: #cccccc;
+    }
+    
+    .custom-progress {
+      height: 12px;
+      background-color: #333;
+      border-radius: 20px;
+      overflow: hidden;
+      
+      .progress-bar {
+        background-color: #ff6ec7;
+        transition: width 1s ease-in-out;
+        border-radius: 20px;
+      }
+    }
+  }
+}
+
+
+/* ----------------- skills-section ----------------------- */
+.skills-section {
+  /* background: #0f0f0f; */
+  color: #fff;
+
+  .skills-title {
+    font-size: 2.8rem;
+    font-weight: 700;
+  }
+
+  .skills-subtitle {
+    color: #bbb;
+    margin-top: 0.5rem;
+  }
+
+  .glass-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    transition: 0.3s ease;
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 48px rgba(0, 0, 0, 0.5);
+    }
+
+    .progress-circle {
+      width: 100px;
+      margin: 0 auto;
+      position: relative;
+
+      .CircularProgressbar-path {
+        stroke-linecap: round;
+        transition: stroke-dashoffset 1.2s ease;
+      }
+
+      .icon-overlay {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+
+    .skill-name {
+      margin-top: 1rem;
+      font-size: 1.2rem;
+      font-weight: 700;
+    }
+
+    .skill-percent {
+      font-size: 1rem;
+      font-weight: 700;
+      color: #aaa;
+      margin-top: 0.2rem;
+    }
+  }
+}
+
+/* --------------- Project-session --------------------- */
+.projects-section {
+  /* background: #0a0a0a; */
+  color: #fff;
+  
+  div {
+    border-radius: 15px;
+  }
+  .projects-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #00d4ff;
+    margin-bottom: 1rem;
+  }
+
+  .projects-subtitle {
+    font-size: 1.2rem;
+    color: #ccc;
+    margin-bottom: 2rem;
+  }
+
+  .project-card {
+    background: rgba(255, 255, 255, 0.04);
+    
+    border-radius: 15px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    border: none;
+
+    &:hover {
+      border: 2px solid #00d4ff;
+    }
+
+    .project-img {
+      height: 200px;
+      object-fit: cover;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .project-title {
+      font-size: 1.3rem;
+      font-weight: 600;
+      /* color: #fff; */
+    }
+
+    .project-desc {
+      color: #bbb;
+      font-size: 0.95rem;
+      margin: 1rem 0;
+    }
+
+    .btn-custom {
+      background: #00d4ff;
+      color: #0a0a0a;
+      font-weight: 600;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+
+      &:hover {
+        background: #fff;
+        color: #0a0a0a;
+      }
+    }
+  }
+}
+
+
+@media (min-width:250px) and (max-width:510px) {
+
+  .projects-section div {
+      
+      text-align: center;
+      border-radius: 15px;
+    }
+  
+}
+
+/* --------------- Experience-section ------------------- */
+.experience-section {
+  /* background: #1a1a1a; */
+  color: #fff;
+
+  h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
+  .experience-slider {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 20px 0;
+
+    .experience-item {
+      min-width: 300px;
+      width: 100%;
+      transition: transform 0.3s ease-in-out;
+      
+      &:hover {
+        transform: translateY(-10px);
+      }
+      
+      .experience-card {
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: 20px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(15px);
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+        padding: 1.5rem;
+        transition: all 0.3s ease;
+
+        &:hover {
+          box-shadow: 0 12px 48px rgba(0, 0, 0, 0.5);
+          transform: translateY(-5px);
+        }
+
+        .experience-role {
+          font-size: 1.4rem;
+          font-weight: 700;
+          color: #00d4ff;
+          margin-bottom: 0.5rem;
+        }
+
+        .experience-desc {
+          font-size: 1rem;
+          color: #bbb;
+          margin-bottom: 1rem;
+          line-height: 1.5;
+        }
+
+        .timeline-year {
+          font-size: 0.9rem;
+          font-weight: 600;
+          color: #777;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width:250px) and (max-width:510px) {
+  .experience-section h2 {
+    font-size: 1.9rem;
+    font-weight: 900;
+  }
+}
+
+/* -------------- Contact-section ----------------------- */
+
+
+.contact-section {
+  /* background: linear-gradient(135deg, #1f1f1f, #292929); */
+  color: #ffffff;
+}
+
+.contact-form-container {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-button {
+  background: #ff6ec7;
+  border: none;
+  padding: 10px 30px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+
+.contact-button:hover {
+  background: #ff3cab;
+  transform: translateY(-2px);
+}
+
+.form-control-glass {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  border-radius: 12px;
+  padding: 10px 15px;
+}
+
+.form-control-glass::placeholder {
+  color: #cccccc;
+}
+
+.form-control-glass:focus {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: #ff6ec7;
+  box-shadow: 0 0 5px #ff6ec7;
+  color: #fff;
+}
+
+/* ----------- Footer section ------------------------ */
+.footer-section {
+  background: linear-gradient(135deg, #111, #1a1a1a);
+  color: #f0f0f0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-name {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.highlight {
+  color: #ff6ec7;
+}
+
+.footer-icons a {
+  color: #ff6ec7;
+  margin: 0 12px;
+  transition: all 0.3s ease;
+
+  &:hover {
+    color: #fff;
+    transform: scale(1.2);
+  }
+}
+
+
+.footer-copy {
+  font-size: 0.9rem;
+  color: #bbb;
+}
+
